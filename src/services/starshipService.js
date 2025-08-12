@@ -1,4 +1,4 @@
-const BASE_URL = "https://swapi.info/api/starships/";
+const BASE_URL = "https://swapi.info/api/starships";
 
 const show = async () => {
   try {
@@ -8,6 +8,7 @@ const show = async () => {
     }
     const data = await res.json()
     console.log("Data:", data)
+    return data
   } catch (error) {
     console.log(error)
   }
