@@ -4,9 +4,9 @@ const StarshipList = (props) => {
   
   return (
     <>
-      {props.displayedStarships.map((starship) => {
+      {props.displayedStarships.map((starship, index) => {
         return (
-          <StarshipCard starship={starship} />
+          <StarshipCard  key={index} starship={starship} />
         )
         
       })}

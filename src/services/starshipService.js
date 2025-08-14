@@ -1,6 +1,6 @@
 const BASE_URL = "https://swapi.info/api/starships";
 
-const show = async () => {
+const index = async () => {
   try {
     const res = await fetch(BASE_URL)
     if (!res.ok) {
@@ -15,4 +15,4 @@ const show = async () => {
 };
 
 
-export{show}
+export{index}
